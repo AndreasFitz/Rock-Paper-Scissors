@@ -13,10 +13,10 @@ function computerPlay() {
         computerSelection = "Rock";
         console.log("Rock ai");
     } else if (ai > 33 && ai <= 67) {
-        computerSelection = "Paper"
+        computerSelection = "Paper";
         console.log("Paper ai");
     } else {
-       computerSelection = "Scissor"
+       computerSelection = "Scissor";
         console.log("Scissor ai");
     }
 
@@ -40,7 +40,7 @@ function playRound(playerSelection,computerSelection) {
         para.textContent = "You won! Rock beats Scissor";
         return playerWinTotal++;
     } else if (playerSelection == "Scissor" && computerSelection == "Paper") {
-        para.textContent = "You won! Scissor beats Rock";
+        para.textContent = "You won! Scissor beats Paper";
         return playerWinTotal++;
     } else if (playerSelection == "Paper" && computerSelection == "Rock") {
         para.textContent = "You won! Paper Beats Rock";
